@@ -1,0 +1,6 @@
+Wire
+0
+Gate
+1
+Label
+2

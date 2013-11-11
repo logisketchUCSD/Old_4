@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F1BC34C-B893-4C99-8B6A-E1A26115EC80}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Grouper</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Grouper</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CombinationRecognizer\CombinationRecognizer.csproj">
+      <Project>{4A871ACD-7374-4349-A310-432CD99B09FF}</Project>
+      <Name>CombinationRecognizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Featurefy\Featurefy.csproj">
+      <Project>{C2043A9A-A7CA-43AC-A4DF-318A32BCB165}</Project>
+      <Name>Featurefy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Old Recognizers\OldRecognizers.csproj">
+      <Project>{3B43E303-2C6B-452D-ABCC-BE0B94410A63}</Project>
+      <Name>OldRecognizers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recognizers\Recognizers.csproj">
+      <Project>{8B3A372B-E76E-4848-BE61-1D4436AC06AB}</Project>
+      <Name>Recognizers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Segment\Segment.csproj">
+      <Project>{F8323D9F-F02D-4280-9C7B-16438BFDD92C}</Project>
+      <Name>Segment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StrokeScanner\StrokeScanner\StrokeScanner.csproj">
+      <Project>{97E43C1E-2241-4B37-8519-2D99271DF97C}</Project>
+      <Name>StrokeScanner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Svm\Svm\Svm.csproj">
+      <Project>{E880953B-FF08-407B-8617-04E95B36AE84}</Project>
+      <Name>Svm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SymbolRec\SymbolRec.csproj">
+      <Project>{E96E2B9D-2C80-4961-9ABA-FC1E1B6280F6}</Project>
+      <Name>SymbolRec</Name>
+    </ProjectReference>
+    <Reference Include="Converter, Version=1.0.2634.38794, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FrontEnd\UserStudyUI\Converter.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <ProjectReference Include="..\..\Util\ConverterXML\ConverterXML.csproj">
+      <Project>{165389E7-414D-49BB-B958-4B521AA1D452}</Project>
+      <Name>ConverterXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\GenerateSubsets\GenerateSubsets.csproj">
+      <Project>{3C7E4C76-3822-422A-8169-07C2A80DDE8D}</Project>
+      <Name>GenerateSubsets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\ConverterXML\ConverterXML.csproj">
+      <Project>{165389E7-414D-49BB-B958-4B521AA1D452}</Project>
+      <Name>ConverterXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\InkRecognition\InkRecognition.csproj">
+      <Project>{6310403C-A622-4AA0-8854-814EA6D8C626}</Project>
+      <Name>InkRecognition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\MathNet.Iridium-2008.4.14.425\Sources\Library\Iridium.csproj">
+      <Project>{26FC15DE-EFDA-403A-8284-1E2A4AE8A9D8}</Project>
+      <Name>Iridium</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\PairedList\PairedList.csproj">
+      <Project>{EECB7959-5B70-4B21-950C-EFCDDE2139CB}</Project>
+      <Name>PairedList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Set\Set.csproj">
+      <Project>{182FAEC4-3133-4D14-9BE5-5B8718752EE1}</Project>
+      <Name>Set</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Sketch\Sketch.csproj">
+      <Project>{84AE0BC9-B169-4B44-B320-4825D027BD2C}</Project>
+      <Name>Sketch</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GroupException.cs" />
+    <Compile Include="Overview.cs" />
+    <Compile Include="TemporalGroup.cs" />
+    <Compile Include="Cluster.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Grouper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="K-means.cs" />
+    <Compile Include="LabelGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NHGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CircuitSearch.cs" />
+    <Compile Include="PGroup.cs" />
+    <Compile Include="ProximitySearch.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="TTGroup.cs" />
+    <Compile Include="TTSearch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

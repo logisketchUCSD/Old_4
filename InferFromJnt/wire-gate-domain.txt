@@ -1,0 +1,4 @@
+HMC Research 06
+Wires are wires, gates are not wires not text, text unlabeled
+Wire 0 Blue
+Gate 1 Red

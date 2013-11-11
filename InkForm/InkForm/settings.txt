@@ -1,0 +1,17 @@
+% Settings for InkForm:
+% Includes filenames for default neural networks and domains
+Directory = Initialization Files\
+FeaturesSingle = FeatureListSingle.txt
+FeaturesGroup = FeatureListGroup.txt
+Domain = DC3wgl.dom
+StrokeClassificationNetwork = DC3wgl.nn
+GrouperNetworkGates = DC3gates.nn
+GrouperNetworkLabels = DC3labels.nn
+GrouperNetworkWires = DC3wires.nn
+ImageDefinitions = DC3imageDefs.imdf
+FeatureAvgsAndStdDevs = featureAverages.txt
+DirectoryStrokeNetworks = NetworksStroke\
+DirectoryGateNetworks = NetworksGate\
+DirectoryLabelNetworks = NetworksLabel\
+DirectoryWireNetworks = NetworksWire\
+DirectoryImageDefinitions = ImageDefinitions\2Examples\
